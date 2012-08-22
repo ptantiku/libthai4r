@@ -7,7 +7,7 @@ input = 'ภาษาไทยเป็นภาษาที่ง่ายท�
 input_windows874 = input.encode('Windows-874', :undef => :replace,:replace => '')
 
 # break words in the line
-output_windows874 = LibThai::brk_line(input_windows874)
+output_windows874 = LibThai4R::brk_line(input_windows874)
 
 # encode back to UTF-8
 output = output_windows874.encode('UTF-8')
