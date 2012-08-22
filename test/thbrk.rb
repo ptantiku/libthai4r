@@ -1,14 +1,15 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
-require "iconv"
-require 'libthai'
+require 'libthai4r'
 
-utf8_to_tis620 = Iconv.new("TIS620", "UTF-8")
+# libthai requires input to be tis620/windows874 (one-byte char)
+input = 'ภาษาไทยเป็นภาษาที่ง่ายที่สุดในโลก'
+input_windows874 = input.encode('Windows-874', :undef => :replace,:replace => '')
 
-a=LibThai::brk_line(utf8_to_tis620.iconv("ภาษาไทยเป็นภาษาที่ง่ายที่สุดในโลก"));
+# break words in the line
+output_windows874 = LibThai::brk_line(input_windows874)
 
-tis620_to_utf8 = Iconv.new("UTF-8", "TIS620")
+# encode back to UTF-8
+output = output_windows874.encode('UTF-8')
 
-o=tis620_to_utf8.iconv(a)
-
-print o
+print output
