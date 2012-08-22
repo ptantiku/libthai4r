@@ -14,9 +14,9 @@ Original project http://code.google.com/p/libthai4r
 
 #### Manually
 
-	$ wget ftp://linux.thai.net/pub/thailinux/software/libthai/libdatrie-0.2.4.tar.gz
-	$ tar zxvf libdatrie-0.2.4.tar.gz
-	$ cd libdatrie-0.2.4
+	$ wget ftp://linux.thai.net/pub/thailinux/software/libthai/libdatrie-0.2.5.tar.gz
+	$ tar zxvf libdatrie-0.2.5.tar.gz
+	$ cd libdatrie-0.2.5
 	$ ./configure
 	$ make
 	$ sudo make install
@@ -29,9 +29,9 @@ Original project http://code.google.com/p/libthai4r
 	
 #### Manually
 
-	$ wget http://linux.thai.net/pub/thailinux/software/libthai/libthai-0.1.16.tar.gz
-	$ tar zxvf libthai-0.1.16.tar.gz 
-	$ cd libthai-0.1.16/
+	$ wget http://linux.thai.net/pub/thailinux/software/libthai/libthai-0.1.18.tar.gz
+	$ tar zxvf libthai-0.1.18.tar.gz 
+	$ cd libthai-0.1.18/
 	$ ./configure 
 	$ make
 	$ sudo make install
