@@ -2,7 +2,17 @@
 
 Ruby Libthai binding for Ruby 1.9.x.
 
-Original project http://code.google.com/p/libthai4r
+## Original project from:
+http://code.google.com/p/libthai4r (by Vee Satayamas)
+
+## Forked project from:
+https://github.com/neokain/libthai4r (by Phuwanart Larpmark)
+
+Modification on this version are :
+
+* update README on adding installation method for Ubuntu users
+* change ruby package name and compiled library to 'libthai4r'
+* change test codes to use String.encode() instead of Iconv which is deprecated in Ruby 1.9
 
 ## Install Prerequisite Packages
 
@@ -50,8 +60,6 @@ You can test with test file in test folder.
 	ภาษา|ไทย|เป็น|ภาษา|ที่|ง่าย|ที่สุด|ใน|โลก
 
 ## Usage
-
-You much install iconv. If You using RMV you can do follow this http://beginrescueend.com/packages/iconv
 
 	#!/usr/bin/env ruby
 	# encoding: utf-8
