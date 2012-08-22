@@ -1,3 +1,18 @@
+2012-08-23 Phitchayaphong Tantikul <ptantiku@gmail.com>
+	* README.md
+	Update readme for Ubuntu users
+	Update example to use new code without iconv
+	
+	* extconf.rb
+	Change to create make file for libthai4r
+
+	* libthai.c
+	Change Init_libthai -> Init_libthai4r
+	Change rb_define_module("LibThai4R")
+	
+	* test/thbrk.rb:
+	Change iconv to use String.encode in Ruby 1.9
+
 2011-12-22 Phuwanart Larpmark <neokain@gmail.com>
 
 	* libthai.c:

@@ -4,7 +4,6 @@
 
 VALUE mLibThai;
 
-
 static VALUE
 f_th_brk(VALUE obj,VALUE v_str)
 {
@@ -75,9 +74,9 @@ f_th_istis(VALUE obj, VALUE ch)
 }
 
 void
-Init_libthai(void)
+Init_libthai4r(void)
 {
-  mLibThai = rb_define_module("LibThai");
+  mLibThai = rb_define_module("LibThai4R");
   rb_define_module_function(mLibThai, "brk", f_th_brk, 1);
   rb_define_module_function(mLibThai, "brk_line", f_th_brk_line, -1);
   rb_define_module_function(mLibThai, "normalize", f_th_normalize, 1);

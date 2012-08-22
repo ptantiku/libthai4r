@@ -35,5 +35,5 @@ module PkgConfig
 end
 
 PkgConfig.find("libthai","0.1.1")
-create_makefile "libthai"
+create_makefile "libthai4r"
 
